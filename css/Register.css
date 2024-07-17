@@ -1,0 +1,294 @@
+/* Start Variable */
+:root{
+    --main-color:#ffffffe0;
+    --second-color:#0fcebb;
+    --section-padding:60px;
+    --transition: 0.4s;
+  }
+  
+  
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+  }
+  /* End Variable */
+  /* Start Global Rules */
+  * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction:rtl;
+  }
+  /* small */
+  @media (min-width: 768px) {
+    .container{
+      width: 750px;
+    }
+  }
+  
+  /* medium */
+  @media (min-width: 992px) {
+    .container{
+      width: 970px;
+    }
+  }
+  
+  /* large */
+  @media (min-width: 1200px) {
+    .container{
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  .hid-1 {
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    position:fixed;
+    top: 0;
+    z-index: 99;
+  }
+  .hid-1 > a {
+    color: var(--main-color);
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .hid-1 > a:hover {
+    color: var(--second-color);
+  }
+  .hid-1 .nav-menu {
+    display: none;
+  }
+  
+  .hid-1 h2 a {
+    color: var(--main-color);
+    font-size: 1.7em;
+    font-weight: 800;
+    padding-right: 10px;
+  }
+  .hid-1 h2 a:hover {
+    color: var(--second-color);
+  }
+  .hid-1 .logo a {
+    padding: 0 10px;
+    color: var(--main-color);
+    font-size: 17px;
+  }
+  .hid-1 .logo a:hover {
+    color: var(--second-color);
+  }
+  @media (max-width:1200px) {
+    .hid-1 .nav-menu {
+      display: block;
+    }
+    .hid-1 > a:nth-child(1) {
+      display: none;
+    }
+  }
+  @media (max-width:767px){
+    .hid-1 {
+      padding: 0 10px;
+    }
+    .hid-1 h2 a {
+      font-size: 1.1em;
+    }
+    .hid-1 .logo a:nth-child(1) {
+      display: none;
+    }
+  }
+  /* End hid-1 */
+  /* Start back-form */
+  .back-form {
+    background: url(/imgs/background.webp) no-repeat center ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frame {
+    height: 70vh;
+    width: 1100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .register{
+    background-color:#008f81;
+    height: 100%;
+  
+  }
+  .register form {
+    height: 100%;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  .register form h1 {
+    font-size: 2em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+  }
+  .register form input[type=text],input[type=email],input[type=password],input[type="tel"]{
+    direction: ltr;
+    font-size: 1em;
+    margin-bottom:50px ;
+    padding: 10px 80px;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .register form input[type=submit]{
+    margin-top: 25px;
+    letter-spacing: 3px;
+    background-color: #000000;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    width: auto;
+}
+  
+  .register form input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .register form input[type=submit]:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .register form input[type=submit] {
+      padding: .75rem 1.5rem;
+    }
+  }
+  .register form .new {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-direction: row-reverse;
+  }
+  .register form .new a {
+    color: var(--main-color);
+  }
+  .frame .label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .frame .label label{
+    unicode-bidi: plaintext;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.frame .label select {
+    padding: 5px 10px;
+    font-size: 1.1em;
+
+    border-radius: 20px;
+    border: none;
+  }
+  .frame .label select option {
+    padding: 10px 0;
+  }
+  .frame .label select:nth-of-type(1) {
+    margin-right: 20px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--second-color);
+    height: 100%;
+    border-radius: 0 40px 40px 0
+  }
+  .text h2 {
+    color: var(--main-color);
+    font-size: 2.3em;
+    letter-spacing: 2px;
+  }
+  .text p {
+    margin: 50px 0;
+    line-height: 45px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #00000082;
+  }
+  .text .social a {
+    padding-left: 50px;
+    color: var(--main-color);
+    font-size: 2em;
+  }
+  .text .social a:hover {
+    color: #ffffff4d ;
+  }
+  form a {
+    margin-top: 20px;
+    color: var(--main-color);
+    margin-left: -230px;
+    font-size: 1.3em;
+  }
+  @media (max-width:768px) {
+    .text {
+      display:none;
+    }
+    .frame {
+      justify-content: center;
+    }
+    .register form .new {
+      width: 80%;
+    }
+  }
+  @media (max-width:1400px) {
+    .frame {
+        height: 70vh;
+        width: 800px;
+      }
+      .register form {
+        width: 400px;
+        height: 60vh;
+      }
+      form h1 {
+        margin-top: 15px;
+      }
+  }
+  /* End back-form */
+  
