@@ -264,12 +264,12 @@ header .head-text a:hover {
 /* Start video_show */
 
 .video-show {
-  height: 50vh;
-  margin: 50px 0;
+  height: 70vh;
+  margin: 30px 0 60px;
 }
 .video-show .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 700px;
 }
@@ -279,8 +279,8 @@ header .head-text a:hover {
 
 /* Start Sample-Sale */
 .sample-sale {
-  height: 150vh;
-  background-color: #fefefec4;
+  height: 180vh;
+  background-color: #fefefeb2;
 }
 .sample-sale .ad-sale{
   display: flex;
@@ -441,7 +441,7 @@ header .head-text a:hover {
 /* End Quality */
 /* Start footer */
 footer {
-  height: 25vh;
+  height: 30vh;
   background-color: var(--second-color);
 }
 footer > .container {
